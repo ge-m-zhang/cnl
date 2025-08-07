@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Colors as CSS custom properties for JavaScript access */
+    --color-blue-dark: #1264b0;
+    --color-blue-main: #2e8ded;
+    --color-blue-light: #6bb4fd;
+    --color-blue-lighter: #98cdfe;
+
+    --color-shade-dark: #1e0f63;
+    --color-shade-main: #3f3fa1;
+    --color-shade-light: #a4acf3;
+    --color-shade-lighter: #ccd0fc;
+
+    --color-teal-dark: #009985;
+    --color-teal-main: #00cfb5;
+    --color-teal-light: #26f1d2;
+    --color-teal-lighter: #6cffe8;
+
+    --color-violet-dark: #7a27be;
+    --color-violet-main: #9948da;
+    --color-violet-light: #b87be6;
+    --color-violet-lighter: #d7b7ff;
+
+    --color-purple-dark: #341f7a;
+    --color-purple-main: #5734c8;
+    --color-purple-light: #8868ff;
+    --color-purple-lighter: #aa9dfe;
+
+    --color-green-dark: #33750b;
+    --color-green-main: #4aa810;
+    --color-green-light: #66cb17;
+    --color-green-lighter: #98ee41;
+
+    --color-red-dark: #dc323d;
+    --color-red-main: #fb4955;
+    --color-red-light: #fe7974;
+    --color-red-lighter: #ffb0a5;
+
+    --color-gold-dark: #e59c0e;
+    --color-gold-main: #fbba14;
+    --color-gold-light: #ffd25e;
+    --color-gold-lighter: #ffe297;
+
+    --color-gray-dark: #343557;
+    --color-gray-main: #5a5c81;
+    --color-gray-light: #d8d8ec;
+    --color-gray-lighter: #f2f2fa;
+
+    /* Semantic colors for light mode */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    /* Border radius */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark mode semantic colors */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply bg-background text-foreground transition-colors;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 1.125;
+    margin: 0;
+    font-size: inherit;
+  }
+
+  /* Form elements styling */
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Focus styles */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  }
+}
+
+@layer components {
+  /* Portal containers */
+  #modal-entry,
+  #toast-entry {
+    @apply pointer-events-none fixed inset-0;
+  }
+
+  /* Custom utility classes for semantic colors */
+  .bg-blue-main {
+    background-color: var(--color-blue-main);
+  }
+
+  .text-blue-main {
+    color: var(--color-blue-main);
+  }
+
+  .bg-shade-main {
+    background-color: var(--color-shade-main);
+  }
+
+  .text-shade-main {
+    color: var(--color-shade-main);
+  }
+
+  .bg-teal-main {
+    background-color: var(--color-teal-main);
+  }
+
+  .text-teal-main {
+    color: var(--color-teal-main);
+  }
+
+  /* Button focus ring utility */
+  .button-focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+}

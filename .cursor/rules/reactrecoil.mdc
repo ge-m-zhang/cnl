@@ -1,0 +1,76 @@
+---
+description: 
+globs: *.tsx,*.component.tsx
+alwaysApply: false
+---
+Component Structure
+
+Keep components small and focused
+Extract reusable logic into custom hooks
+Use composition over inheritance
+Split large components into smaller, focused ones
+Use arrow functions when possible.
+
+
+const preferFunctionalComponents = true;
+
+// TypeScript React best practices
+
+const typescriptReactBestPractices = [
+  "Use React.FC for functional components with props",
+  "Utilize useState and useEffect hooks for state and side effects",
+  "Implement proper TypeScript interfaces for props and state",
+  "Use React.memo for performance optimization when needed",
+  "Implement custom hooks for reusable logic",
+  "Utilize TypeScript's strict mode",
+];
+
+
+// Additional instructions
+
+const additionalInstructions = `
+1. Use .tsx extension for files with JSX
+2. Implement strict TypeScript checks
+3. Utilize React.lazy and Suspense for code-splitting
+4. Use type inference where possible
+5. Implement error boundaries for robust error handling
+6. Follow React and TypeScript best practices and naming conventions
+7. Use ESLint with TypeScript and React plugins for code quality
+`;
+
+Recoil State Management
+
+Organize atoms and selectors by feature/domain in dedicated files
+Use atom families for collections of similar state
+Implement selectors for derived state calculations
+Create custom hooks that encapsulate Recoil state access
+Leverage atom effects for side effects (like persistence)
+
+
+Performance
+
+Use selectors for expensive computations
+Implement component-level memoization with React.memo
+Use waitForAll and waitForNone for parallel queries
+Properly scope atoms to minimize unnecessary re-renders
+
+// Rule Type: React Component Patterns
+
+// Component Structure
+Always use arrow function components for consistency and readability
+Example:
+const Button: React.FC<ButtonProps> = ({ children, onClick, variant = 'primary' }) => {
+  return (
+    <button 
+      onClick={onClick}
+      className={`rounded px-4 py-2 ${variantStyles[variant]}`}
+    >
+      {children}
+    </button>
+  );
+};
+
+Define explicit prop interfaces for every component
+Extract complex logic to custom hooks
+Use proper typing for event handlers
+Implement proper memoization with React.memo, useMemo, and useCallback

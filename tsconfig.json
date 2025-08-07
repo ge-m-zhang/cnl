@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@frontend/*": ["apps/frontend/src/*"],
+      "@backend/*": ["apps/backend/src/*"],
+      "@packages/*": ["packages/*"],
+      "@react-ui/*": ["packages/@react-ui/src/*"]
+    },
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "esModuleInterop": true
+  },
+  "exclude": ["**/node_modules", "**/dist", "**/build", "**/.eslintrc.*"]
+}

@@ -1,0 +1,6 @@
+/dist/
+/coverage/
+/build/
+jest.setup.js
+/scripts
+.eslintrc.js

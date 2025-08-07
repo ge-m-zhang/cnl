@@ -1,0 +1,74 @@
+/* Import shared global styles from @react-ui */
+@import '@react-ui/lib/system/globals.css';
+
+/* Storybook-specific styles */
+@layer base {
+  /* Reset some basic elements for better component showcase */
+  .sb-show-main {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+
+  /* Improve readability of component documentation */
+  .docs-story {
+    padding: 2rem;
+  }
+}
+
+@layer components {
+  /* Add a subtle grid background for transparent components */
+  .sb-grid {
+    background-image: linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* Style for component showcase containers */
+  .sb-component-container {
+    padding: 1rem;
+    border-radius: var(--radius);
+    background-color: hsl(var(--background));
+    border: 1px solid hsl(var(--border));
+  }
+
+  /* Style for component documentation */
+  .sb-docs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}
+
+@layer utilities {
+  /* Utility classes for component showcase */
+  .sb-spacing {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .sb-dark-bg {
+    background-color: hsl(var(--background));
+    padding: 1rem;
+    border-radius: var(--radius);
+  }
+
+  .sb-light-bg {
+    background-color: hsl(var(--muted));
+    padding: 1rem;
+    border-radius: var(--radius);
+  }
+}
+
+/* height  */
+
+body div.sb-story {
+  max-height: 200px;
+  overflow: hidden;
+}
+/* Target the inner content that might be limiting height */
+body div.sb-story > div {
+  min-height: unset;
+  height: auto;
+  max-height: none;
+}

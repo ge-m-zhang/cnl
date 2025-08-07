@@ -1,0 +1,46 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Enables TypeScript's incremental compilation feature, which saves information from previous
+    // compilation runs to a .tsbuildinfo file. This speeds up subsequent builds by only
+    // rechecking files that have changed or have dependencies that changed.
+    "incremental": true,
+
+    // Specifies additional type declaration files to include without importing them:
+    // - vitest/globals: Makes Vitest testing functions (describe, it, expect) globally available
+    // - vite/client: Provides types for Vite-specific features that might be used in the project
+    "types": ["vitest/globals", "vite/client"],
+
+    "paths": {
+      "@frontend/*": ["./src/*"],
+      "@gmzh/react-ui/*": ["../../packages/@react-ui/src/*"]
+    }
+  },
+  "include": [
+    "src",
+    "jest.config.ts",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "src/config/jest/setupTests.ts",
+    "../../packages/@react-ui/**/*"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

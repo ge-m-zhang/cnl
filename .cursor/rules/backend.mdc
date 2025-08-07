@@ -1,0 +1,11 @@
+---
+description: 
+globs: */backend/*.ts
+alwaysApply: false
+---
+// NestJS Architecture
+Use module structure for feature organization
+Implement repository pattern for data access
+Use proper dependency injection
+Support both REST and GraphQL
+Structure DTOs with proper validation

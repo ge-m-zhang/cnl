@@ -1,0 +1,84 @@
+# Dependencies
+node_modules
+.pnpm-store/
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+**/dist/
+build/
+**/build/
+storybook-static/
+**/storybook-static/
+*.js.map
+*.d.ts.map
+out/
+.next/
+.nuxt/
+.output/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing
+coverage
+.nyc_output
+**/coverage
+**/.nyc_output
+
+# Turborepo
+.turbo
+**/.turbo
+
+# Cache
+.cache
+**/.cache
+.eslintcache
+.stylelintcache
+.prettiercache
+
+# OS
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Editors
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# Misc
+.temp
+.tmp
+pids
+*.pid
+*.seed
+*.pid.lock
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# TypeScript
+*.tsbuildinfo
+
+# React UI Package specific
+packages/@react-ui/dist/
+packages/@react-ui/dist-cjs/

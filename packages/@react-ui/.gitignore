@@ -1,0 +1,18 @@
+# Build outputs
+dist/
+dist-cjs/
+build/
+
+# Dependencies
+node_modules/
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db 

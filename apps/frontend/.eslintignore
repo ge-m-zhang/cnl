@@ -1,0 +1,6 @@
+/build/
+src/@types/*
+/mocks/
+src/config/*
+webpack.config.js
+.eslintrc.js

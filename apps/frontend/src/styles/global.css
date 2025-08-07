@@ -1,0 +1,52 @@
+/* Import the UI library's global styles first - this includes Inter font and CSS variables */
+@import '@react-ui/lib/system/globals.css';
+
+/* Tailwind's CSS configuration */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Frontend-specific base styles */
+@layer base {
+  /* Reset and normalize */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    /* Use the font family defined in UI library's Tailwind config */
+    font-family: theme('fontFamily.sans');
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Code elements styling */
+  code {
+    font-family: theme('fontFamily.mono');
+    background-color: hsl(var(--muted));
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+  }
+
+  /* Root element should fill viewport */
+  #root {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Frontend-specific component overrides if needed */
+@layer components {
+  /* Add any frontend-specific component styles here */
+}

@@ -1,0 +1,30 @@
+---
+description: 
+globs: *.ts,*.tsx
+alwaysApply: false
+---
+TypeScript Best Practices
+
+
+Type System
+
+Use interfaces for DynamoDB entity definitions
+Leverage TypeScript's utility types for API responses
+Avoid using any, prefer unknown for API responses
+Use strict TypeScript configuration across the monorepo
+
+
+Code Organization
+
+Export types from dedicated type files when shared between frontend/backend
+Use barrel exports (index.ts) for organizing exports
+Place shared types in a packages/types directory
+Co-locate component props with their components
+
+
+Backend Patterns
+
+Use the Repository pattern for DynamoDB access
+Implement proper error handling with custom error types
+Use Result types for operations that can fail
+Leverage dependency injection in NestJS services

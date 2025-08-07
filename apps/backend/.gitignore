@@ -1,0 +1,5 @@
+# Backend-specific
+/migrations/.migrations
+/uploads
+/tmp
+/scripts/local

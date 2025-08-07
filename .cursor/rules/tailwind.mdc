@@ -1,0 +1,45 @@
+---
+description: 
+globs: *.component.tsx
+alwaysApply: false
+---
+Tailwind CSS Best Practices
+
+Project Configuration
+
+Configure theme extension for consistent brand colors and spacing
+Set up proper content paths in tailwind.config.js for purging
+Define custom utility classes for repeated patterns
+Configure dark mode support for future flexibility
+
+
+Component Styling
+
+Use utility classes directly over custom CSS whenever possible
+Group related utilities with @apply only for frequently repeated patterns
+Extract component-specific styles to dedicated component libraries
+Keep component styles consistent with design system
+
+
+Responsive Design
+
+Follow mobile-first approach in all component designs
+Use consistent breakpoint naming across components
+Utilize Flexbox and Grid utilities effectively for layouts
+Implement proper spacing system using Tailwind's spacing scale
+
+
+Component Library Integration
+
+Use shadcn/ui components as a foundation for UI elements
+Maintain consistent component API for all custom components
+Create a component showcase/storybook for documentation
+Ensure proper accessibility through ARIA attributes and semantic HTML
+
+
+Performance Optimization
+
+Properly configure content paths for production builds
+Use appropriate code splitting for component-heavy pages
+Minimize custom CSS outside of Tailwind's utility system
+Implement Just-in-Time mode for development efficiency
