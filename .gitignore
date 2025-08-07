@@ -78,7 +78,3 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # TypeScript
 *.tsbuildinfo
-
-# React UI Package specific
-packages/@react-ui/dist/
-packages/@react-ui/dist-cjs/

@@ -1,18 +1,10 @@
 import type { Config } from 'tailwindcss';
 
-import baseConfig from '../../packages/@react-ui/src/tailwind.config.base';
-
 const config: Config = {
-  ...baseConfig,
-  content: [
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-    '../../packages/@react-ui/src/**/*.{js,ts,jsx,tsx,mdx}',
-    './.storybook/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}', './.storybook/**/*.{js,ts,jsx,tsx,mdx}'],
+  plugins: [require('../frontend/node_modules/@gmzh/react-ui/tailwind-plugin')],
   theme: {
-    ...baseConfig.theme,
     extend: {
-      ...baseConfig.theme?.extend,
       // Add Storybook-specific theme extensions if needed
     },
   },

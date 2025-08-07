@@ -1,6 +1,6 @@
 # Storybook React UI
 
-A Storybook application for showcasing and developing React UI components from the `@react-ui` package.
+A Storybook application for showcasing and developing React UI components from the `@gmzh/react-ui` package.
 
 ## Overview
 
@@ -52,6 +52,6 @@ pnpm build
 
 When adding new components:
 
-1. Create component files in `@react-ui/src/lib/components`
+1. Create component files using the `@gmzh/react-ui` components
 2. Add corresponding stories in the component directory
 3. Update the component showcase in `src/Component.tsx` if needed

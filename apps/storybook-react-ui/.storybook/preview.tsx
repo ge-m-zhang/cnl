@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Preview } from '@storybook/react';
-import { ThemeProvider } from '@react-ui';
+import '@gmzh/react-ui/styles';
+import { ThemeProvider } from '@gmzh/react-ui';
 
 import '../src/styles/storybook.css';
 

@@ -14,7 +14,6 @@ A modern full-stack template built with React, NestJS, and TypeScript, featuring
   - Recoil for state management
   - React Router for routing
   - Tailwind CSS for styling
-  - Custom UI component library (@react-ui)
 
 - **Backend**
 
@@ -38,8 +37,6 @@ A modern full-stack template built with React, NestJS, and TypeScript, featuring
 │   ├── frontend/          # React frontend application
 │   ├── backend/           # NestJS backend application
 │   └── storybook-react-ui # Storybook for UI components
-├── packages/
-│   └── @react-ui/         # Shared UI component library
 └── pnpm-workspace.yaml    # PNPM workspace configuration
 ```
 
@@ -75,8 +72,6 @@ pnpm --filter backend dev
 # Start Storybook for component library
 pnpm --filter storybook-react-ui dev
 
-# Build and watch the UI library during development
-pnpm --filter @react-ui dev
 ```
 
 ### UI Component Development
@@ -86,11 +81,6 @@ pnpm --filter @react-ui dev
 pnpm --filter storybook-react-ui dev
 # Visit http://localhost:6006
 
-# Build the component library
-pnpm --filter @react-ui build
-
-# Test component library
-pnpm --filter @react-ui test
 ```
 
 ## 🔧 Backend Setup
@@ -101,10 +91,6 @@ The backend service requires some configuration before it can be used. Please re
 - Google OAuth setup
 - JWT configuration
 - Optional feature setup (OpenAI, AWS)
-
-## 🎨 UI Component Library
-
-The project includes a custom UI component library (@react-ui) with **13 fully implemented components** built for modern web applications. All components feature TypeScript support, accessibility compliance, and comprehensive Storybook documentation.
 
 ### 🧩 Implemented Components
 
@@ -202,15 +188,10 @@ This template is designed to evolve with your projects and provide a consistent 
 ### Component Library Integration
 
 ```bash
-# Link local UI library to existing projects
-cd /path/to/existing-project
-pnpm link /path/to/ReactNest-template/packages/@react-ui
 
-# Or install from published package
+# install from published package
 pnpm add @gmzh/react-ui
 
-# Or add as GitHub dependency
-pnpm add github:yourusername/ReactNest-template#main --filter @react-ui
 ```
 
 ### Using Components in Your App

@@ -1,5 +1,5 @@
-/* Import shared global styles from @react-ui */
-@import '@react-ui/lib/system/globals.css';
+/* Import shared global styles from @gmzh/react-ui */
+@import '@gmzh/react-ui/styles';
 
 /* Storybook-specific styles */
 @layer base {

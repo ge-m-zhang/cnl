@@ -4,12 +4,7 @@
 module.exports = {
   plugins: {
     'postcss-import': {
-      resolve: (id) => {
-        if (id.startsWith('@react-ui/')) {
-          return id.replace('@react-ui/', '../../packages/@react-ui/src/');
-        }
-        return id;
-      },
+      // No need for custom resolution since using npm package @gmzh/react-ui
     },
     'postcss-nesting': {},
     tailwindcss: {},

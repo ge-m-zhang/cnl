@@ -10,11 +10,7 @@ export default defineConfig({
       include: '**/src/**/*.{js,jsx,ts,tsx}',
     }),
   ],
-  resolve: {
-    alias: {
-      '@react-ui': path.resolve(__dirname, '../../packages/@react-ui/src'),
-    },
-  },
+  // No need for alias since using npm package @gmzh/react-ui
   optimizeDeps: {
     include: ['react', 'react-dom'],
   },

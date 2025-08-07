@@ -4,11 +4,12 @@ import path from 'path';
 // !https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated
 
 const config: StorybookConfig = {
-  stories: [
-    '../../../packages/@react-ui/src/**/*.stories.@(js|jsx|ts|tsx)',
-    'src/**/*.stories.@(js|jsx|ts|tsx)',
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  addons: [
+    '@storybook/addon-essentials',
+    '@storybook/addon-links',
+    '@storybook/addon-interactions',
   ],
-  addons: ['@storybook/addon-essentials', '@storybook/addon-links', '@storybook/addon-interactions'],
   framework: {
     name: '@storybook/react-vite',
     options: {},
@@ -21,7 +22,7 @@ const config: StorybookConfig = {
     return mergeConfig(config, {
       resolve: {
         alias: {
-          '@react-ui': path.resolve(__dirname, '../../../packages/@react-ui/src'),
+          '@gmzh/react-ui': path.resolve(__dirname, '../../frontend/node_modules/@gmzh/react-ui'),
         },
       },
     });

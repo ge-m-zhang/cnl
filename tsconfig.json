@@ -4,8 +4,7 @@
     "paths": {
       "@frontend/*": ["apps/frontend/src/*"],
       "@backend/*": ["apps/backend/src/*"],
-      "@packages/*": ["packages/*"],
-      "@react-ui/*": ["packages/@react-ui/src/*"]
+      "@packages/*": ["packages/*"]
     },
     "skipLibCheck": true,
     "strictNullChecks": true,
