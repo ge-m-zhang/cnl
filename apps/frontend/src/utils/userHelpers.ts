@@ -15,8 +15,6 @@ export const useUserState = () => {
     queryFn: apiClient.getProfile,
   });
 
-  // todo
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [, setUserProfile] = useRecoilState(userProfileState);
 
   useEffect(() => {
@@ -54,7 +52,7 @@ export const useUserState = () => {
     };
 
     setProfileAndCheckUser();
-  }, [data, setUserProfile]);
+  }, [data]);
 
   return { error, isLoading };
 };
