@@ -28,8 +28,7 @@ An AI-powered chatbot designed for personalized learning. This web application a
 ```
 ├── apps/
 │   ├── frontend/          # React chat interface
-│   ├── backend/           # NestJS API server
-│   └── storybook-react-ui # UI component documentation
+│   └── backend/           # NestJS API server
 └── pnpm-workspace.yaml    # PNPM workspace configuration
 ```
 
@@ -81,9 +80,6 @@ pnpm --filter frontend start
 
 # Backend (NestJS API)
 pnpm --filter backend start:dev
-
-# UI Components (Storybook)
-pnpm --filter storybook-react-ui dev
 ```
 
 ## 🔧 Backend Setup
