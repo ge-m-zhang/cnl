@@ -1,6 +1,6 @@
 {
-  "name": "chatandlearn",
-  "version": "2.2.7",
+  "name": "cnl",
+  "version": "1.3.0",
   "private": true,
   "author": "GMZhang",
   "workspaces": [
