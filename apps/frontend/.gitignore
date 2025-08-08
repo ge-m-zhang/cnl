@@ -1,7 +1,6 @@
 # Frontend-specific
 /.pnp
 .pnp.js
-/storybook-static
 
 # Local environment overrides
 .env.local

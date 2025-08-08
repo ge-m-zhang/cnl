@@ -28,8 +28,7 @@
     "types": ["vitest/globals", "vite/client"],
 
     "paths": {
-      "@frontend/*": ["./src/*"],
-      "@gmzh/react-ui/*": ["../../packages/@react-ui/src/*"]
+      "@frontend/*": ["./src/*"]
     }
   },
   "include": [
@@ -39,8 +38,7 @@
     "**/*.test.tsx",
     "**/*.spec.ts",
     "**/*.spec.tsx",
-    "src/config/jest/setupTests.ts",
-    "../../packages/@react-ui/**/*"
+    "src/config/jest/setupTests.ts"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

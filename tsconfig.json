@@ -3,9 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@frontend/*": ["apps/frontend/src/*"],
-      "@backend/*": ["apps/backend/src/*"],
-      "@packages/*": ["packages/*"],
-      "@react-ui/*": ["packages/@react-ui/src/*"]
+      "@backend/*": ["apps/backend/src/*"]
     },
     "skipLibCheck": true,
     "strictNullChecks": true,

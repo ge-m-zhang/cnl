@@ -1,5 +1,5 @@
 /* Import the UI library's global styles first - this includes Inter font and CSS variables */
-@import '@react-ui/lib/system/globals.css';
+@import '@gmzh/react-ui/styles';
 
 /* Tailwind's CSS configuration */
 @tailwind base;

@@ -1,23 +1,11 @@
 // apps/frontend/tailwind.config.ts
-import baseConfig from '../../packages/@react-ui/src/tailwind.config.base';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  ...baseConfig,
-
-  /*
-Replaced with ../../packages/@react-ui/src/...
-This ensures Tailwind can directly access and scan the component files during build time
-This is more reliable because:
-It uses the actual file system path that Tailwind can access directly
-It doesn't depend on module resolution which happens later in the build process
-It ensures all Tailwind classes in shared components are properly detected and included in the final CSS
-*/
-  content: ['./src/**/*.{js,ts,jsx,tsx}', '../../packages/@react-ui/src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  plugins: [require('@gmzh/react-ui/tailwind-plugin')],
   theme: {
-    ...baseConfig.theme,
     extend: {
-      ...baseConfig.theme?.extend,
       // Frontend-specific extensions
     },
   },

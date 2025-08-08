@@ -33,7 +33,6 @@ export default defineConfig(async () => {
         alias: {
           '@': path.resolve('./src'),
           '@frontend': path.resolve('./src'),
-          '@react-ui': path.resolve('../../packages/@react-ui/src'),
         },
       },
     }),
