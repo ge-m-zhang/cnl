@@ -3,8 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@frontend/*": ["apps/frontend/src/*"],
-      "@backend/*": ["apps/backend/src/*"],
-      "@packages/*": ["packages/*"]
+      "@backend/*": ["apps/backend/src/*"]
     },
     "skipLibCheck": true,
     "strictNullChecks": true,

@@ -2,6 +2,4 @@
 packages:
   - 'apps/frontend'
   - 'apps/backend'
-  - 'packages/*'
-  - 'packages/react-ui'
   - 'apps/storybook-react-ui'

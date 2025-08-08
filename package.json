@@ -1,11 +1,10 @@
 {
-  "name": "reactnest-template",
-  "version": "1.2.7",
+  "name": "chatandlearn",
+  "version": "2.2.7",
   "private": true,
   "author": "GMZhang",
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "apps/*"
   ],
   "scripts": {
     "start": "turbo run start --parallel",
