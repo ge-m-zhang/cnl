@@ -163,8 +163,8 @@ importers:
   apps/frontend:
     dependencies:
       '@gmzh/react-ui':
-        specifier: ^0.1.2
-        version: 0.1.2(react@18.3.1)
+        specifier: ^0.2.8
+        version: 0.2.8(react@18.3.1)
       '@tanstack/react-query':
         specifier: ^5.77.2
         version: 5.77.2(react@18.3.1)
@@ -831,8 +831,8 @@ packages:
     resolution: {integrity: sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@gmzh/react-ui@0.1.2':
-    resolution: {integrity: sha512-6Gb/W50ChazgNBfyUkRhpt4a9mk3c4eQBgxyafRo1YNQsXVUwOqfasfhIeUemVuJov+vxXd4lUMbsq2qcebJEg==}
+  '@gmzh/react-ui@0.2.8':
+    resolution: {integrity: sha512-rdnz03YrhqusaDPFH1bMvd0ZUWnp0gG5RZNsi3MrOSfwirN5jytdbIJJl2qZ2OasoECKnUxumHCJA1gj2VdSWQ==}
     peerDependencies:
       react: ^18.2.0
 
@@ -6330,7 +6330,7 @@ snapshots:
 
   '@eslint/js@8.56.0': {}
 
-  '@gmzh/react-ui@0.1.2(react@18.3.1)':
+  '@gmzh/react-ui@0.2.8(react@18.3.1)':
     dependencies:
       class-variance-authority: 0.7.1
       clsx: 2.1.1
